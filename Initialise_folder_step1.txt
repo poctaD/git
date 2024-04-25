@@ -1,1 +1,24 @@
-git init .
+// Install git from https://git-scm.com/download/win.
+
+// to connect to GitHub make ssh keys for ssh connection first
+//in git bash do command (for Windows):
+
+cd "C:\Users\igors\.ssh" && ssh-keygen -t ed25519 -C "pocta@inbox.lv" 
+
+// In GitHub go to your profile "Settings"->"SSH and GPG keys"->"New SSH key"
+// add any Discription and copy your public key .pub file content to "Key" and push "Add SSH key"
+//
+
+// To initialize folder Go to GitHub Home push "New" make a repository
+// After that go to your local computer and make the same repository
+
+git init // Initialize folder for git
+git add README.md  // add file to git
+git status // check staged files
+git commit -m "first commit" // comit staged files
+git branch -M main  // create branch
+git branch -v // list branches
+git remote add origin https://github.com/poctaD/github.git // Choose directory from github where to push
+git push -u origin main // push origin of main branch
+
+//
